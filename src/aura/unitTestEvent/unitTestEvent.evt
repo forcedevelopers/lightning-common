@@ -1,0 +1,1 @@
+<aura:event type="APPLICATION" description="Unit Test application event to be listened and handled in components" />

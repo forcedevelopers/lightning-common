@@ -1,0 +1,17 @@
+<aura:component extends="c:main" implements="force:appHostable">
+    <aura:set attribute="pageHeader" value="Force.com Lightning Demo"/>
+    <aura:set attribute="menu">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="#">Menu Link</a>
+            </li>
+        </ul>
+    </aura:set>
+    
+    <ltng:require scripts="/resource/styles/js/core.utils.js"
+                  afterScriptsLoaded="{!c.onInit}"/>
+    
+    <aura:handler event="c:unitTestEvent" action="{!c.runUnitTests}"/>
+    
+    <div aura:id="container">{!v.body}</div>
+</aura:component>

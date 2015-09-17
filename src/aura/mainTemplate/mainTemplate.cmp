@@ -1,0 +1,35 @@
+<aura:component isTemplate="true" extends="aura:template" extensible="true">
+    
+    <link rel="stylesheet" type="text/css" href="/resource/styles/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/resource/styles/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resource/styles/css/bootstrap-tokenfield.min.css" />
+    
+    <script type="text/javascript" src="/resource/styles/js/jquery.min.2.1.4.js"></script>
+    <script type="text/javascript" src="/resource/styles/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/resource/styles/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/resource/styles/js/jquery.tokeninput.js"></script>
+    <script type="text/javascript" src="/resource/styles/js/bootstrap-tokenfield.min.js"></script>
+    
+    <style>
+        #lock.lockOff { 
+        display: none; 
+        visibility: hidden; 
+        } 
+        
+        #lock.lockOn { 
+        display: block; 
+        visibility: visible; 
+        position: fixed; 
+        z-index: 9999; 
+        top: 0px; 
+        left: 0px; 
+        width: 105%; 
+        height: 105%; 
+        background-color: #ccc; 
+        text-align: center; 
+        padding-top: 20%; 
+        filter: alpha(opacity=75); 
+        opacity: 0.75; 
+        }
+    </style>
+</aura:component>
